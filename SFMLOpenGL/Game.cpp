@@ -52,19 +52,35 @@ void Game::initialize()
 	glNewList(index, GL_COMPILE);
 	glBegin(GL_QUADS);
 	{
-		//Front Face
-		glColor3f(0.0f, 0.0f, 1.0f);
-		glVertex3f(v3.x, 1.0f, -5.0f);
-		glVertex3f(-1.0f, 1.0f, -5.0f);
-		glVertex3f(-1.0f, -1.0f, -5.0f);
-		glVertex3f(1.0f, -1.0f, -5.0f);
-
 		//Back Face
 		glColor3f(0.0f, 1.0f, 0.0f);
 		glVertex3f(1.0f, 1.0f, -15.0f);
 		glVertex3f(-1.0f, 1.0f, -15.0f);
 		glVertex3f(-1.0f, -1.0f, -15.0f);
 		glVertex3f(1.0f, -1.0f, -15.0f);
+
+		//red
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex3f(-1.0f, -1.0f, -5.0f);
+		glVertex3f(0.0f, -1.0f, -5.0f);
+		glVertex3f(-1.0f, -1.0f, -15.0f);
+		glVertex3f(1.0f, -1.0f, -15.0f);
+
+		//white
+		glColor3f(1.0f, 1.0f, 1.0f);
+		glVertex3f(0.0f, 1.0f, -5.0f);
+		glVertex3f(1.0f, 1.0f, -15.0f);
+		glVertex3f(1.0f, -1.0f, -15.0f);
+		glVertex3f(0.0f, -1.0f, -5.0f);
+
+
+		//Front Face
+		glColor3f(0.0f, 0.0f, 1.0f);
+		glVertex3f(v3.x, 1.0f, -5.0f);
+		glVertex3f(-1.0f, 1.0f, -5.0f);
+		glVertex3f(-1.0f, -1.0f, -5.0f);
+		glVertex3f(0.0f, -1.0f, -5.0f);
+
 
 		//Complete the faces of the Cube
 	}
