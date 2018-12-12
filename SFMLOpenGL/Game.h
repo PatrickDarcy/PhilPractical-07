@@ -5,6 +5,7 @@
 #include <gl/GLU.h>
 
 #include "MyVector3.h"
+#include "MyMatrix3.h"
 
 
 using namespace std;
