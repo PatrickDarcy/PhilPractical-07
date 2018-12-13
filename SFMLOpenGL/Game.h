@@ -24,10 +24,18 @@ private:
 	void update();
 	void draw();
 	void unload();
+	void newlist();
 
 	GLuint index;
 	Clock clock;
 	Time elapsed;
 
-	float rotationAngle = 0.0f;
+	float rotationAngleX = 0.0f;
+	float rotationAngleY = 0.0f;
+	float rotationAngleZ = 0.0f;
+
+	MyVector3 startPoint[8];
+	MyVector3 point[8];
+	MyVector3 displacmentV;
+
 };
